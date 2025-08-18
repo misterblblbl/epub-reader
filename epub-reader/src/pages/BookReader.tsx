@@ -231,18 +231,22 @@ export const BookReader: React.FC = () => {
 
       console.log('Rendition created');
 
-      // Apply reading-friendly styles
+      // Apply cyberpunk reading styles
       rendition.themes.default({
         'body': {
           'font-family': 'Georgia, serif !important',
           'font-size': '18px !important',
           'line-height': '1.6 !important',
-          'color': '#2d3748 !important',
-          'background': '#f7fafc !important',
+          'color': '#E0E0FF !important',
+          'background': '#0D0D1A !important',
           'padding': '2rem !important'
         },
         'p': {
           'margin-bottom': '1rem !important'
+        },
+        'h1, h2, h3, h4, h5, h6': {
+          'color': '#A855F7 !important',
+          'text-shadow': '0 0 10px rgba(168, 85, 247, 0.5) !important'
         }
       });
 

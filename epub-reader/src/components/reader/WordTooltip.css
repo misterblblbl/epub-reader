@@ -1,0 +1,103 @@
+.word-tooltip {
+  position: fixed;
+  z-index: 1000;
+  min-width: 250px;
+  max-width: 300px;
+  transform: translateX(-50%);
+  pointer-events: auto;
+}
+
+.tooltip-content {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  font-size: 14px;
+}
+
+.tooltip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.tooltip-word {
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--text-primary);
+}
+
+.tooltip-close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--text-secondary);
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.tooltip-close-btn:hover {
+  background: var(--bg-secondary);
+}
+
+.tooltip-part-of-speech {
+  font-style: italic;
+  color: var(--text-secondary);
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.tooltip-phonetic {
+  color: var(--text-secondary);
+  font-size: 12px;
+  margin-bottom: 8px;
+  font-family: monospace;
+}
+
+.tooltip-translation {
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.tooltip-loading {
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 8px 0;
+}
+
+.tooltip-error {
+  color: #e53e3e;
+  font-size: 12px;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.tooltip-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.save-word-btn {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.save-word-btn:hover {
+  background: var(--accent-hover);
+}

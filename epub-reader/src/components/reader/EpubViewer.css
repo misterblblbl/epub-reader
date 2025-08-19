@@ -1,0 +1,23 @@
+.reader-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 60px);
+  overflow: hidden;
+}
+
+.epub-viewer {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.epub-viewer iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: none;
+  background: var(--bg-primary);
+}
